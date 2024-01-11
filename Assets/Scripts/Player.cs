@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [Header("Moving")]
     [SerializeField]private int moveSpeed;
     private Vector2 moveDir;
-    private bool facingRight;
+    public UnityEvent ChangedDirection;
+    private bool movingRight = true;
 
     [Header("Jumping")]
     [SerializeField]private int jumpAmount;
@@ -38,10 +40,14 @@ public class Player : MonoBehaviour
     }
     //Changes the direction the sprite is facing based on where you're moving
     void ChangeDirection(){
-        if(moveDir.x < 0){
+        if(moveDir.x < 0 && movingRight == true){
+            movingRight = false;
             GetComponentInChildren<SpriteRenderer>().flipX = true;
-        }else if(moveDir.x > 0){
+            ChangedDirection.Invoke();
+        }else if(moveDir.x > 0 && movingRight == false){
+            movingRight = true;
             GetComponentInChildren<SpriteRenderer>().flipX = false;
+            ChangedDirection.Invoke();
         }
     }
     //Checks to see if the player is on the ground; and starts coyote time when leaving the ground
