@@ -8,7 +8,8 @@ public class SummonObject : Spell
 
     public override void Cast(SpellCaster caster)
     {
-        Instantiate(summon, caster.CastLocation(), Quaternion.identity);
+        Projectile newSummon = Instantiate(summon, caster.CastLocation(), Quaternion.identity).GetComponent<Projectile>();
+        newSummon.Summon(caster);    
         base.Cast(caster);
     }
 }

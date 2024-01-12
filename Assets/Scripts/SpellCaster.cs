@@ -12,10 +12,8 @@ public class SpellCaster : MonoBehaviour
         if(primarySpell)primarySpell.UpdateTimer();
     }
     public void CastSpell(InputAction.CallbackContext context){
-        if(context.action.triggered){
-            if(primarySpell.CanCast()){
-                primarySpell.Cast(this);
-            }
+        if(primarySpell.CanCast()){
+            primarySpell.Cast(this);
         }
     }
 
@@ -25,5 +23,13 @@ public class SpellCaster : MonoBehaviour
 
     public void FlipCastLocation(){
         transform.Rotate(0f,180f,0f);
+    }
+
+    public Vector2 DirectionOfCast(){
+        return castingPoint.position - transform.position;
+    }
+
+    public void GotHit(){
+        Destroy(gameObject);
     }
 }

@@ -36,7 +36,7 @@ TextureImporter:
       213: 1729472921674898532
     second: Simplistic NPCS-Sheet_10
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -95,6 +96,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -134,6 +136,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -388,6 +402,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Simplistic NPCS-Sheet_6: 785181158226238690
+      Simplistic NPCS-Sheet_5: 443937322378017228
+      Simplistic NPCS-Sheet_4: -4168031373115050847
+      Simplistic NPCS-Sheet_2: 2686606271357264290
+      Simplistic NPCS-Sheet_7: -5985000067288899645
+      Simplistic NPCS-Sheet_0: -3725471949426162526
+      Simplistic NPCS-Sheet_8: 3898636640264795563
+      Simplistic NPCS-Sheet_1: 338630801975149483
+      Simplistic NPCS-Sheet_10: 1729472921674898532
+      Simplistic NPCS-Sheet_3: -1939940377390218143
+      Simplistic NPCS-Sheet_9: -5838254323466246313
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

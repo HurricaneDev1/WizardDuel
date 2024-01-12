@@ -1,15 +1,16 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1
+--- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 61
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247994e1f5a72c2419c26a37e9334c01, type: 3}
-  m_Name: 
+  m_Script: {fileID: 11500000, guid: 1e9b2653b1ccaad44a431e25890f2ca1, type: 3}
+  m_Name: SummonSquare
   m_EditorClassIdentifier: 
-  m_LastMaterialVersion: 5
+  coolDown: 0
+  summon: {fileID: 5527847453238117186, guid: 21012fdba302aaf4a9df9d51f07c8af7, type: 3}

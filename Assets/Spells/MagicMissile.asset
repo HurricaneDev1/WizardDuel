@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9b2653b1ccaad44a431e25890f2ca1, type: 3}
   m_Name: MagicMissile
   m_EditorClassIdentifier: 
-  coolDown: 1
-  summon: {fileID: 8216376199162522588, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+  coolDown: 0.2
+  summon: {fileID: 822117388960902200, guid: fbcb7dbc2650d854fb10202bff2d6bd6, type: 3}
