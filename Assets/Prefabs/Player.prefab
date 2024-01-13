@@ -26,11 +26,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.462, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 675612865}
+  m_Father: {fileID: 8282261833939947352}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &675612864
+--- !u!1 &4135968365749773045
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,43 +39,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 675612865}
-  - component: {fileID: 675612866}
+  - component: {fileID: 8282261833939947352}
   m_Layer: 0
-  m_Name: CasterObject
+  m_Name: CastParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &675612865
+--- !u!4 &8282261833939947352
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675612864}
+  m_GameObject: {fileID: 4135968365749773045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 92878646}
   m_Father: {fileID: 8216376199162522589}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &675612866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675612864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ae5fed9b3365024285feaf3e6b4597a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castingPoint: {fileID: 92878646}
 --- !u!1 &8216376198272106569
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,6 +89,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.028, y: -0.407, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8216376199162522589}
   m_RootOrder: 1
@@ -132,6 +121,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8216376199162522589}
   m_RootOrder: 0
@@ -147,6 +137,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -155,7 +146,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0991455d054c66746be5c33c774c6d85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -202,6 +193,8 @@ GameObject:
   - component: {fileID: 8216376199162522585}
   - component: {fileID: 8216376199162522582}
   - component: {fileID: 8216376199155669104}
+  - component: {fileID: 4377809155702882811}
+  - component: {fileID: 3279337115102693632}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -219,10 +212,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8216376199024729082}
   - {fileID: 8216376198272106566}
-  - {fileID: 675612865}
+  - {fileID: 8282261833939947352}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -289,7 +283,7 @@ MonoBehaviour:
   ChangedDirection:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 675612866}
+      - m_Target: {fileID: 4377809155702882811}
         m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
         m_MethodName: FlipCastLocation
         m_Mode: 1
@@ -370,8 +364,56 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a0ea8a5a-7d34-4259-954a-f8d2b88ea4c0
     m_ActionName: Combat/Aim[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4377809155702882811}
+        m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
+        m_MethodName: CastPrimary
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 929d0149-2c26-4bdd-afee-0ecc40020c32
+    m_ActionName: Combat/Cast[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4377809155702882811}
+        m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
+        m_MethodName: CastSecondary
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c96ebc73-6759-4480-80e1-c6f3b1613c9f
+    m_ActionName: Combat/Secondary Cast[/XInputControllerWindows/buttonWest,/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8216376199162522584}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e832b05b-b036-42e2-b720-3186a4f1eb13
+    m_ActionName: Combat/Reset[/Keyboard/z,/XInputControllerWindows/leftTrigger]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Combat
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -400,5 +442,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: add6aee957ac97148af45c8b970aef95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4377809155702882811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216376199162522588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae5fed9b3365024285feaf3e6b4597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primarySpell: {fileID: 11400000, guid: 60a8b8e2bcb90214b86d78cf42cb0b91, type: 2}
+  secondarySpell: {fileID: 11400000, guid: 691ce2ebb5675414ab1a2b1987ba4c39, type: 2}
+  castingPoint: {fileID: 92878646}
+  sr: {fileID: 8216376199024729085}
+--- !u!114 &3279337115102693632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216376199162522588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338da0e7b353f70448ecd7fc7442a60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

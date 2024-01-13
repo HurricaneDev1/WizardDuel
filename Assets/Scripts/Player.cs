@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [Header("Moving")]
@@ -94,6 +95,10 @@ public class Player : MonoBehaviour
         //Stops the players y velocity for a second; then jumps up
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(transform.up * jumpAmount, ForceMode2D.Impulse);
+    }
+    //Resets the round
+    public void Reset(){
+        SceneManager.LoadScene(0);
     }
     //Just a thing to visualize the ground check
     void OnDrawGizmos(){

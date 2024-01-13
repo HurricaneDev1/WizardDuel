@@ -6,14 +6,12 @@ public class ScreenWrap : MonoBehaviour
 {
     private Camera cam;
     private Rigidbody2D rb;
-    // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
+    //Wraps the object to the other side when they reach the edge of the screen
     void Update()
     {
         Vector3 screenPos = cam.WorldToScreenPoint(transform.position);

@@ -6,7 +6,7 @@ public class Spell : ScriptableObject
 {
     public float coolDown;
     private float cooldownTimer;
-    public virtual void Cast(SpellCaster caster){
+    public virtual void Cast(SpellCaster caster, Material material){
         cooldownTimer = coolDown;
     }
 
