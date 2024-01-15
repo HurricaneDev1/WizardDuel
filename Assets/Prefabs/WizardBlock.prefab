@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5527847453238117189}
   - component: {fileID: 5527847453238117188}
   - component: {fileID: 5527847453238117191}
-  - component: {fileID: -6463692553968512596}
   - component: {fileID: -214309908236679074}
   - component: {fileID: 6347891614065900782}
   - component: {fileID: 500718936257842157}
+  - component: {fileID: 6769274772341478771}
   m_Layer: 3
   m_Name: WizardBlock
   m_TagString: Untagged
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 68dfa1172c473d94fb76ce93c078afc4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,20 +137,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-6463692553968512596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5527847453238117186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4923dc47554712548af0bc97cd9f7735, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  lifeSpan: 10000
 --- !u!114 &-214309908236679074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338da0e7b353f70448ecd7fc7442a60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 2549828864854626557, guid: 04f0999a90c685945b8878feebca8c7e, type: 3}
 --- !u!114 &6347891614065900782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +177,17 @@ MonoBehaviour:
   gravity: 1
   terminalVelocity: -10
   mass: 1
+--- !u!114 &6769274772341478771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527847453238117186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8193afb30ac9c0f4dbbf511d92501cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 1000
+  permanent: 1

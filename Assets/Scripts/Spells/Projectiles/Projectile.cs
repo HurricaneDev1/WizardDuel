@@ -2,29 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class Projectile : SummonedObject
 {
-    private SpellCaster caster;
-    private Rigidbody2D rb;
     [SerializeField]private int speed;
-    [SerializeField]private float lifeSpan;
-    private SpriteRenderer sr;
-    void Awake(){
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-    }
-    void Update(){
-        //Kills the projectile off after a bit
-        lifeSpan -= Time.deltaTime;
-        if(lifeSpan <= 0){
-            Destroy(gameObject);
-        }
-    }
-    //Creates the projectile, changes its direction, speed and appearance based on the caster
-    public void Summon(SpellCaster newCaster, Material material){
-        sr.material = material;
-        sr.flipX = newCaster.GetComponentInChildren<SpriteRenderer>().flipX;
-        caster = newCaster;
+    public override void Summon(SpellCaster newCaster, Material material)
+    {
+        base.Summon(newCaster, material);
         rb.AddForce(caster.DirectionOfCast() * speed, ForceMode2D.Impulse);
     }
     //When the projectile hits something it dissapears and maybe destroys the thing

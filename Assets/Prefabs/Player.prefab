@@ -368,7 +368,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4377809155702882811}
         m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
-        m_MethodName: CastPrimary
+        m_MethodName: SetSpell
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4377809155702882811}
+        m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
+        m_MethodName: CastSpell
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -384,12 +396,24 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4377809155702882811}
         m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
-        m_MethodName: CastSecondary
+        m_MethodName: SetSpell
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4377809155702882811}
+        m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
+        m_MethodName: CastSpell
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -412,6 +436,34 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e832b05b-b036-42e2-b720-3186a4f1eb13
     m_ActionName: Combat/Reset[/Keyboard/z,/XInputControllerWindows/leftTrigger]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4377809155702882811}
+        m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
+        m_MethodName: SetSpell
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4377809155702882811}
+        m_TargetAssemblyTypeName: SpellCaster, Assembly-CSharp
+        m_MethodName: CastSpell
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 99d31d84-d476-457c-8954-e4a36cfbc003
+    m_ActionName: Combat/Third Cast[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Combat
@@ -456,10 +508,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae5fed9b3365024285feaf3e6b4597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primarySpell: {fileID: 11400000, guid: 60a8b8e2bcb90214b86d78cf42cb0b91, type: 2}
-  secondarySpell: {fileID: 11400000, guid: 691ce2ebb5675414ab1a2b1987ba4c39, type: 2}
+  spellList:
+  - {fileID: 11400000, guid: 60a8b8e2bcb90214b86d78cf42cb0b91, type: 2}
+  - {fileID: 11400000, guid: 691ce2ebb5675414ab1a2b1987ba4c39, type: 2}
+  - {fileID: 11400000, guid: 4c000fc9f8aab374f9d6f22f82090fdc, type: 2}
   castingPoint: {fileID: 92878646}
   sr: {fileID: 8216376199024729085}
+  summons: []
 --- !u!114 &3279337115102693632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,3 +527,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338da0e7b353f70448ecd7fc7442a60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 2549828864854626557, guid: 04f0999a90c685945b8878feebca8c7e, type: 3}
