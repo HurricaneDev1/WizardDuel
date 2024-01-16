@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 4377809155702882811}
   - component: {fileID: 3279337115102693632}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
     m_ActionId: 99d31d84-d476-457c-8954-e4a36cfbc003
     m_ActionName: Combat/Third Cast[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: Controller
   m_DefaultActionMap: Combat
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -515,6 +515,7 @@ MonoBehaviour:
   castingPoint: {fileID: 92878646}
   sr: {fileID: 8216376199024729085}
   summons: []
+  cooldowns: []
 --- !u!114 &3279337115102693632
 MonoBehaviour:
   m_ObjectHideFlags: 0
