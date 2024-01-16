@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SpellCaster : MonoBehaviour
+public class SpellCaster : Hittable
 {
     [SerializeField]private List<Spell> spellList = new List<Spell>();
     [SerializeField]private Transform castingPoint;
@@ -67,9 +67,9 @@ public class SpellCaster : MonoBehaviour
         }
         return null;
     }
-    public void GotHit(){
-        Destroy(gameObject);
-    }
+    // public void GotHit(){
+    //     Destroy(gameObject);
+    // }
 
     public void SpellCooldown(Spell spell){
         int spellSlot = spellList.IndexOf(spell);

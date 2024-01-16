@@ -15,3 +15,4 @@ MonoBehaviour:
   coolDown: 1
   summon: {fileID: 5527847453238117186, guid: 21012fdba302aaf4a9df9d51f07c8af7, type: 3}
   numSummons: 1
+  maxSummons: 5

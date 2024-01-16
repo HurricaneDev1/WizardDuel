@@ -146,7 +146,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0991455d054c66746be5c33c774c6d85, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -194,7 +194,6 @@ GameObject:
   - component: {fileID: 8216376199162522582}
   - component: {fileID: 8216376199155669104}
   - component: {fileID: 4377809155702882811}
-  - component: {fileID: 3279337115102693632}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -508,6 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae5fed9b3365024285feaf3e6b4597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 2549828864854626557, guid: 04f0999a90c685945b8878feebca8c7e, type: 3}
   spellList:
   - {fileID: 11400000, guid: 60a8b8e2bcb90214b86d78cf42cb0b91, type: 2}
   - {fileID: 11400000, guid: 691ce2ebb5675414ab1a2b1987ba4c39, type: 2}
@@ -516,16 +516,3 @@ MonoBehaviour:
   sr: {fileID: 8216376199024729085}
   summons: []
   cooldowns: []
---- !u!114 &3279337115102693632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8216376199162522588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 338da0e7b353f70448ecd7fc7442a60a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle: {fileID: 2549828864854626557, guid: 04f0999a90c685945b8878feebca8c7e, type: 3}
