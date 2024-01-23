@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d06106f8c5bf54ea09c1c0c140b85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 6
   ChangedDirection:
     m_PersistentCalls:
       m_Calls:
@@ -295,7 +295,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  jumpAmount: 15
+  jumpAmount: 16
   jumpDelay: 0.25
   coyoteTime: 0.25
   groundLayer:

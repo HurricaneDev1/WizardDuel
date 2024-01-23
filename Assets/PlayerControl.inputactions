@@ -436,7 +436,7 @@
                 {
                     "name": "",
                     "id": "1b3cd0ed-4a5a-4259-9b33-0bd39a79fe57",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -447,10 +447,32 @@
                 {
                     "name": "",
                     "id": "3755dd7c-d1ae-4cae-b37f-fa537dcb50df",
-                    "path": "<Keyboard>/k",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Arrows",
+                    "action": "Secondary Cast",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0823bb04-09b0-49e6-a4f3-f058788d981c",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Secondary Cast",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1850ccf2-d872-41a1-8d6d-92a19baa3b2b",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Secondary Cast",
                     "isComposite": false,
                     "isPartOfComposite": false

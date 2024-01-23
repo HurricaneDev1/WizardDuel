@@ -7,7 +7,7 @@ public class Spell : ScriptableObject
     protected SpellCaster spellCaster; 
     public virtual void Cast(SpellCaster caster, Material material){
         spellCaster = caster;
-        caster.SpellCooldown(this);
+        caster.SpellCooldown(this); 
     }
 
     public virtual void EndCast(){
