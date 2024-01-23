@@ -164,8 +164,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -162754603
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 68dfa1172c473d94fb76ce93c078afc4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 8216376199162522582}
   - component: {fileID: 8216376199155669104}
   - component: {fileID: 4377809155702882811}
+  - component: {fileID: 6141668939980184974}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -463,8 +464,8 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 99d31d84-d476-457c-8954-e4a36cfbc003
     m_ActionName: Combat/Third Cast[/Keyboard/f]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Controller
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Combat
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -507,12 +508,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae5fed9b3365024285feaf3e6b4597a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 2549828864854626557, guid: 04f0999a90c685945b8878feebca8c7e, type: 3}
   spellList:
-  - {fileID: 11400000, guid: 60a8b8e2bcb90214b86d78cf42cb0b91, type: 2}
+  - {fileID: 11400000, guid: 3a1ad66ec510531469f5862c9999868b, type: 2}
   - {fileID: 11400000, guid: 691ce2ebb5675414ab1a2b1987ba4c39, type: 2}
   - {fileID: 11400000, guid: 4c000fc9f8aab374f9d6f22f82090fdc, type: 2}
   castingPoint: {fileID: 92878646}
   sr: {fileID: 8216376199024729085}
   summons: []
   cooldowns: []
+--- !u!114 &6141668939980184974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216376199162522588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6890c373085a2f4aaac3ef1edeb29f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 2549828864854626557, guid: 04f0999a90c685945b8878feebca8c7e, type: 3}
