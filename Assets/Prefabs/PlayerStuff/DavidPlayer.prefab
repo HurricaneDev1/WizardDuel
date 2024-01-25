@@ -9,10 +9,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4377809155702882811, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: spellList.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4377809155702882811, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: spellList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: d891fc0b02130e94e88029ad0634a0b1, type: 2}
+    - target: {fileID: 4377809155702882811, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: spellList.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: d891fc0b02130e94e88029ad0634a0b1, type: 2}
     - target: {fileID: 8216376199155669104, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
@@ -41,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -53,6 +57,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
@@ -61,6 +69,14 @@ PrefabInstance:
       objectReference: {fileID: 582647642427802456}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 582647642427802456}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 582647642427802456}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 582647642427802456}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
@@ -73,10 +89,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSpell
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: CastSpell
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpellCaster, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpellCaster, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SpellCaster, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
@@ -99,9 +127,17 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522588, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_Name
-      value: Player1 Variant
+      value: DavidPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 8216376199162522589, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
       propertyPath: m_RootOrder

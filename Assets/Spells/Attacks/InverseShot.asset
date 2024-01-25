@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9b2653b1ccaad44a431e25890f2ca1, type: 3}
+  m_Name: InverseShot
+  m_EditorClassIdentifier: 
+  coolDown: 0.5
+  summon: {fileID: 4741921066794382860, guid: c9d8187e8065e554c95be777c0d6c881, type: 3}
+  numSummons: 1
+  maxSummons: 0

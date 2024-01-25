@@ -11,7 +11,7 @@ public class Projectile : SummonedObject
         rb.AddForce(caster.DirectionOfCast() * speed, ForceMode2D.Impulse);
     }
     //When the projectile hits something it dissapears and maybe destroys the thing
-    public void OnTriggerEnter2D(Collider2D col){
+    public virtual void OnTriggerEnter2D(Collider2D col){
         if(col.tag == "Wall"){
             Destroy(gameObject);
         }else if(col.GetComponent<Hittable>()){

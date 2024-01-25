@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellList:
-  - {fileID: 11400000, guid: 3a1ad66ec510531469f5862c9999868b, type: 2}
+  - {fileID: 11400000, guid: 60a8b8e2bcb90214b86d78cf42cb0b91, type: 2}
   - {fileID: 11400000, guid: 691ce2ebb5675414ab1a2b1987ba4c39, type: 2}
   - {fileID: 11400000, guid: 4c000fc9f8aab374f9d6f22f82090fdc, type: 2}
   castingPoint: {fileID: 92878646}

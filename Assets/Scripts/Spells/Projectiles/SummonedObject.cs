@@ -13,7 +13,7 @@ public class SummonedObject : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
     }
-    void Update(){
+    protected void Update(){
         //Kills the projectile off after a bit
         lifeSpan -= Time.deltaTime;
         if(lifeSpan <= 0){

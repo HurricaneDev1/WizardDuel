@@ -397,9 +397,9 @@ MonoBehaviour:
   playerInput: {fileID: 8216376199162522585, guid: eaf227c6e52fc1f4b82ae32e7dcf469c, type: 3}
   playerMaterials:
   - {fileID: 2100000, guid: 0991455d054c66746be5c33c774c6d85, type: 2}
-  - {fileID: 2100000, guid: 0eba31bb9180a6441bf74845b6f4a506, type: 2}
   - {fileID: 2100000, guid: 75eb3a32020e63a44a92381818d05c07, type: 2}
   - {fileID: 2100000, guid: 15d616e293ed84d41add46e46a9b8af5, type: 2}
+  - {fileID: 2100000, guid: 0eba31bb9180a6441bf74845b6f4a506, type: 2}
   spawnPoints:
   - {fileID: 785097813}
   - {fileID: 1510206527}
