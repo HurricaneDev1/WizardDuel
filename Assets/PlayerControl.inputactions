@@ -461,7 +461,7 @@
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
                     "action": "Secondary Cast",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -472,7 +472,7 @@
                     "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Arrows",
                     "action": "Secondary Cast",
                     "isComposite": false,
                     "isPartOfComposite": false
