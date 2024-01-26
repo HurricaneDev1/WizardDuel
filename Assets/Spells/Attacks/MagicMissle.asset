@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9b2653b1ccaad44a431e25890f2ca1, type: 3}
-  m_Name: MagicMissile
+  m_Name: MagicMissle
   m_EditorClassIdentifier: 
-  coolDown: 0.5
-  summon: {fileID: 2337916224556302115, guid: 5f9084cb93ba5fb48b0b7ea468be6b55, type: 3}
+  coolDown: 0.2
+  summon: {fileID: 822117388960902200, guid: fbcb7dbc2650d854fb10202bff2d6bd6, type: 3}
   numSummons: 1
   maxSummons: 0

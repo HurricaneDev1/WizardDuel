@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e9b2653b1ccaad44a431e25890f2ca1, type: 3}
-  m_Name: InverseShot
+  m_Name: GhostAttack
   m_EditorClassIdentifier: 
   coolDown: 0.5
-  summon: {fileID: 4741921066794382860, guid: c9d8187e8065e554c95be777c0d6c881, type: 3}
+  summon: {fileID: 2337916224556302115, guid: 5f9084cb93ba5fb48b0b7ea468be6b55, type: 3}
   numSummons: 1
   maxSummons: 0

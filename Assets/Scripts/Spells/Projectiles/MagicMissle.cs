@@ -5,10 +5,11 @@ using UnityEngine;
 public class MagicMissle : Projectile
 {
     public int move;
-    public bool inverse;
+    private float myTime;
     new protected void Update(){
         base.Update();
-        transform.position = new Vector2(transform.position.x, transform.position.y +( inverse == true ? (Mathf.Sin(Time.time * 10)/move) : (Mathf.Sin(-Time.time * 10)/move)));
+        myTime += Time.deltaTime;
+        transform.position = new Vector2(transform.position.x, transform.position.y + (Mathf.Sin(myTime * 20)/move));
     }
 
     public override void OnTriggerEnter2D(Collider2D col){

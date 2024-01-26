@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3801533695782359122}
   - component: {fileID: 3105598095675839257}
   m_Layer: 0
-  m_Name: SinShot
+  m_Name: GhostAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add6aee957ac97148af45c8b970aef95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activated: 0
+  activated: 1
 --- !u!61 &3801533695782359122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,4 +164,3 @@ MonoBehaviour:
   permanent: 0
   speed: 52
   move: 15
-  inverse: 0
