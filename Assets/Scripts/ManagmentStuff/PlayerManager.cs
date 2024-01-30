@@ -86,9 +86,18 @@ public class PlayerManager : MonoBehaviour
         if(playerAlive)spawnedUIs[spawnedPlayers.IndexOf(playerAlive)].GainPoint();
 
         yield return new WaitForSeconds(1);
+        PlayerSpawns();
         SetPlayerUI(false);
+        
+    }
+
+    void PlayerSpawns(){
+        List<Transform> spawnPointsAvailable = new List<Transform>();
+        spawnPointsAvailable.AddRange(spawnPoints);
         foreach(PlayerInput player in spawnedPlayers){
-            player.GetComponent<PlayerHittable>().Reset(spawnPoints[spawnedPlayers.IndexOf(player)].position);
+            Transform actualSpawn = spawnPointsAvailable[Random.Range(0, spawnPointsAvailable.Count)];      
+            spawnPointsAvailable.Remove(actualSpawn);
+            player.GetComponent<PlayerHittable>().Reset(actualSpawn.position);
         }
     }
 
