@@ -9,7 +9,7 @@ public class MagicMissle : Projectile
     new protected void Update(){
         base.Update();
         myTime += Time.deltaTime;
-        transform.position = new Vector2(transform.position.x, transform.position.y + (Mathf.Sin(myTime * 20)/move));
+        transform.position = new Vector2(transform.position.x, transform.position.y + (Mathf.Cos(myTime * 15)/move));
     }
 
     public override void OnTriggerEnter2D(Collider2D col){
