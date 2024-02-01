@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : SummonedObject
 {
-    [SerializeField]private int speed;
+    [SerializeField]protected int speed;
     public override void Summon(SpellCaster newCaster, Material material)
     {
         base.Summon(newCaster, material);

@@ -424,6 +424,17 @@
                 },
                 {
                     "name": "",
+                    "id": "886683e1-fa09-4486-b547-f7d13e4a01cd",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Cast",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "388f93a4-a1ed-4ab0-95a3-9faba1f794d5",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
@@ -479,6 +490,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9ff00cbd-0f0e-4d02-bca7-e81cd4937033",
+                    "path": "<Keyboard>/8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Secondary Cast",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4556d8b1-9df2-4aba-b1a3-d2e9d9e0268c",
                     "path": "<Keyboard>/z",
                     "interactions": "",
@@ -528,6 +550,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Arrows",
+                    "action": "Third Cast",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef5bb6e6-5169-4881-9e7e-9f31de53ece0",
+                    "path": "<Keyboard>/9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
                     "action": "Third Cast",
                     "isComposite": false,
                     "isPartOfComposite": false
