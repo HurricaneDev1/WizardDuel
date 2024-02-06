@@ -82,7 +82,6 @@ public class PlayerManager : MonoBehaviour
     public IEnumerator ResetPlayers(PlayerInput playerAlive){
         yield return new WaitForSeconds(0.5f);
         SetPlayerUI(true);
-        yield return new WaitForSeconds(0.2f);
         if(playerAlive)spawnedUIs[spawnedPlayers.IndexOf(playerAlive)].GainPoint();
 
         yield return new WaitForSeconds(1);

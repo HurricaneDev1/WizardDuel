@@ -19,9 +19,19 @@ public class PlayerEndRound : MonoBehaviour
     }
 
     public void GainPoint(){
+        StartCoroutine(LightUp());
+    }
+
+    private IEnumerator LightUp(){
+        GetComponent<SpriteRenderer>().color = Color.white;
+        sr.color = Color.white;
+        yield return new WaitForSeconds(0.2f);
         Instantiate(circle, OverlapCalc(new Vector3(transform.position.x + ((numCircles * 0.6f) - 1.4f),transform.position.y + 0.5f, 0)), Quaternion.identity).transform.SetParent(transform);
         numCircles ++;
-    }
+        yield return new WaitForSeconds(0.79f);
+        GetComponent<SpriteRenderer>().color = new Color32(134, 134, 134, 255);
+        sr.color = new Color32(134, 134, 134, 255);
+    } 
 
     public Vector3 OverlapCalc(Vector3 overlap){
         return HowManyLevels(overlap);    
