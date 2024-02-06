@@ -4,13 +4,16 @@ using UnityEngine;
 public class Spell : ScriptableObject
 {
     public float coolDown;
-    protected SpellCaster spellCaster; 
+    public bool hold;
     public virtual void Cast(SpellCaster caster, Material material){
-        spellCaster = caster;
         caster.SpellCooldown(this); 
     }
 
     public virtual void EndCast(){
         
+    }
+
+    public virtual void HoldSkill(SpellCaster caster, Material material){
+        Cast(caster, material);
     }
 }

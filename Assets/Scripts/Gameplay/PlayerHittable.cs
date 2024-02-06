@@ -17,7 +17,6 @@ public class PlayerHittable : Hittable
         transform.position = new Vector2(-400,-400);
         
         currentlyDead = true;
-        caster.ResetSummons();
         PlayerManager.I.AllPlayersAlive();
     }
 

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GhostAttack
   m_EditorClassIdentifier: 
   coolDown: 0.5
+  hold: 1
   summon: {fileID: 2337916224556302115, guid: 5f9084cb93ba5fb48b0b7ea468be6b55, type: 3}
   numSummons: 1
   maxSummons: 0

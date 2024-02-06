@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adaa340ab4da60d41844867ae7984d2c, type: 3}
   m_Name: GoDown
   m_EditorClassIdentifier: 
-  coolDown: 0
+  coolDown: 0.2
+  hold: 0
   downForce: 15

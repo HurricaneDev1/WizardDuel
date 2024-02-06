@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6feccd50b0f35804796b2f79b54dfa29, type: 3}
   m_Name: SwapPosition
   m_EditorClassIdentifier: 
-  coolDown: 0
+  coolDown: 0.2
+  hold: 1

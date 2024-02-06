@@ -67,6 +67,7 @@ public class PlayerManager : MonoBehaviour
         int numPlayersDead = 0;
         PlayerInput playerAlive = null;
         foreach(PlayerInput player in spawnedPlayers){
+            // player.GetComponent<SpellCaster>().ResetSummons();
             if(player.GetComponent<PlayerHittable>().IsDead()){
                 numPlayersDead ++;
             }else{

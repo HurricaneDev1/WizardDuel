@@ -10,20 +10,32 @@ public class SpellCaster : MonoBehaviour
     [SerializeField]private SpriteRenderer sr;
     public List<SummonedObject> summons = new List<SummonedObject>();
     public List<float> cooldowns = new List<float>();
+    public List<bool> heldDown = new List<bool>();
     private Spell currentSpell;
     private Material material;
     void Start(){
         if(sr){
             material = sr.material;
         }
+
         for(int i = 0; i < spellList.Count; i++){
             cooldowns.Add(0);
+        }
+
+        for(int j = 0; j < spellList.Count; j++){
+            heldDown.Add(false);
         }
     }
     void Update(){
         //Updates the cooldowns of the spells; probably a better way to do it
         for(int i = 0; i < cooldowns.Count; i ++){
             cooldowns[i] -= Time.deltaTime;
+        }
+
+        for(int i = 0; i < heldDown.Count; i ++){
+            if(heldDown[i] == true && cooldowns[i] <= 0 && spellList[i].hold == true){
+                spellList[i].HoldSkill(this, material);
+            }
         }
     }
     public void SetSpell(int spellNum){
@@ -34,9 +46,10 @@ public class SpellCaster : MonoBehaviour
             if(context.action.triggered){
                 if(cooldowns[spellList.IndexOf(currentSpell)] <= 0){
                     currentSpell.Cast(this, material);
+                    heldDown[spellList.IndexOf(currentSpell)] = true;
                 }
             }else if(!context.action.triggered){
-                currentSpell.EndCast();
+                heldDown[spellList.IndexOf(currentSpell)] = false;
             }
         }
     }
