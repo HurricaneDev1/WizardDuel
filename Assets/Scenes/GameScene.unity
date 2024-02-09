@@ -186,7 +186,19 @@ PrefabInstance:
     - target: {fileID: 4215023776101201461, guid: b3ed545ba004c3246b8414dbd8f99652, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4168031373115050847, guid: fc8fec4795dd0de44ada33d05124399a, type: 3}
+      objectReference: {fileID: 21300000, guid: 18bc7be5b3b24e346b8060a23f678030, type: 3}
+    - target: {fileID: 4215023776101201461, guid: b3ed545ba004c3246b8414dbd8f99652, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215023776101201461, guid: b3ed545ba004c3246b8414dbd8f99652, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215023776101201461, guid: b3ed545ba004c3246b8414dbd8f99652, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4215023776101201461, guid: b3ed545ba004c3246b8414dbd8f99652, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -194,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 4215023776101201461, guid: b3ed545ba004c3246b8414dbd8f99652, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ee1dbe0d6625eb641b372752a1ee183f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4bd7aaa64376172409804a0613b54cb3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3ed545ba004c3246b8414dbd8f99652, type: 3}
 --- !u!1 &404932923
@@ -588,7 +600,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4bd7aaa64376172409804a0613b54cb3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
