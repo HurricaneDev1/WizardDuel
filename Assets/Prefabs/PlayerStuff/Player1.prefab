@@ -424,7 +424,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8216376199162522584}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: Reset
+        m_MethodName: GoBackToHome
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -517,6 +517,7 @@ MonoBehaviour:
   sr: {fileID: 8216376199024729085}
   summons: []
   cooldowns: []
+  heldDown: 
 --- !u!114 &6141668939980184974
 MonoBehaviour:
   m_ObjectHideFlags: 0

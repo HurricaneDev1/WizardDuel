@@ -97,9 +97,9 @@ public class Player : MonoBehaviour
         rb.AddForce(transform.up * jumpAmount, ForceMode2D.Impulse);
     }
     //Resets the round
-    // public void Reset(){
-    //     SceneManager.LoadScene(1);
-    // }
+    public void GoBackToHome(){
+        SceneManager.LoadScene(0);
+    }
     //Just a thing to visualize the ground check
     void OnDrawGizmos(){
         Gizmos.DrawWireSphere(groundCheckLocation.position, groundCheckRadius);

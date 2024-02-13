@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 62df54bac1da43344b5d0b323fa295fc
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/DavidScene.unity
     guid: 904fbd7aff7868745a3cf41b89d15c46
+  - enabled: 1
+    path: Assets/Scenes/GhostAttack.unity
+    guid: c83914618a1c3ef43a6eff3d72ee828e
+  - enabled: 1
+    path: Assets/Scenes/Tetris.unity
+    guid: 87df193e05c8ffe4e98c301f81c6a013
   m_configObjects: {}

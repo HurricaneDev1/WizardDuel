@@ -106,4 +106,8 @@ public class PlayerManager : MonoBehaviour
             end.TurnOn(on);
         }
     }
+
+    public void SetPlayerInput(PlayerInput newInput){
+        playerInput = newInput;
+    }
 }

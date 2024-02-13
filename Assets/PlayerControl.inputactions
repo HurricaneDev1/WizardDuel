@@ -502,7 +502,7 @@
                 {
                     "name": "",
                     "id": "4556d8b1-9df2-4aba-b1a3-d2e9d9e0268c",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard;Arrows",
