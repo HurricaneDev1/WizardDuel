@@ -102,7 +102,7 @@ MonoBehaviour:
   lifeSpan: 521.62
   permanent: 1
   speed: 0
-  fallSpeed: 0.05
+  fallSpeed: 0.2
 --- !u!61 &4215023776101201463
 BoxCollider2D:
   m_ObjectHideFlags: 0

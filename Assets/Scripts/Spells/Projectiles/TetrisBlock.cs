@@ -10,9 +10,8 @@ public class TetrisBlock : Projectile
         base.Summon(newCaster, material);
         transform.position = new Vector2(Random.Range(-14, 15), 7.5f);
     }
-    protected new void Update()
+    protected void FixedUpdate()
     {
-        base.Update();
         transform.position = new Vector2(transform.position.x, transform.position.y - fallSpeed);
     }
 }
