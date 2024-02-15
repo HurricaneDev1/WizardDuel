@@ -20,9 +20,6 @@ public class SpellCaster : MonoBehaviour
 
         for(int i = 0; i < spellList.Count; i++){
             cooldowns.Add(0);
-        }
-
-        for(int j = 0; j < spellList.Count; j++){
             heldDown.Add(false);
         }
     }
